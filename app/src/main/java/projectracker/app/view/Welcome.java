@@ -1,5 +1,6 @@
 package projectracker.app.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,6 +16,10 @@ public class Welcome extends AppCompatActivity {
     }
 
     public void Click_OpenViewAddProject(View v) {
-
+        Intent intent = new Intent(v.getContext(), ViewAddProject.class);
+        //Bundle bundleOfJoy = new Bundle();
+        //bundleOfJoy.putParcelable(ContactAppUtil.CONTACT_KEY, this.contact);
+        //intent.putExtras(bundleOfJoy);
+        startActivity(intent);
     }
 }
